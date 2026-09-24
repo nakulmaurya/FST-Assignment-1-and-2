@@ -1,0 +1,41 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules/
+**/node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing & audits
+coverage/
+**/coverage/
+*.log
+lighthouse-*.json
+
+# next.js
+.next/
+**/.next/
+out/
+build/
+
+# misc
+.DS_Store
+*.pem
+*.tsbuildinfo
+**/*.tsbuildinfo
+next-env.d.ts
+**/next-env.d.ts
+
+# env files (exclude real env files, preserve .env.example)
+.env
+.env*.local
+**/.env
+# office temp files
+~$*
+*.pptx
+generate_*.py
